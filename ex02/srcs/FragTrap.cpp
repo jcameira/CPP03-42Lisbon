@@ -6,7 +6,7 @@
 /*   By: jcameira <jcameira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 19:19:47 by jcameira          #+#    #+#             */
-/*   Updated: 2024/11/17 20:09:57 by jcameira         ###   ########.fr       */
+/*   Updated: 2024/11/18 00:51:43 by jcameira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ FragTrap::~FragTrap( void ) {
 }
 
 FragTrap    &FragTrap::operator=( const FragTrap &obj ) {
-    std::cout << "FragTrap Assignation operator called" << std::endl;
+    std::cout << "FragTrap Assignment operator called" << std::endl;
     if ( this != &obj ) {
         ClapTrap::operator=(obj);
     }

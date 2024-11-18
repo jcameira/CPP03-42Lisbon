@@ -6,7 +6,7 @@
 /*   By: jcameira <jcameira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 18:06:51 by jcameira          #+#    #+#             */
-/*   Updated: 2024/11/17 19:35:59 by jcameira         ###   ########.fr       */
+/*   Updated: 2024/11/18 00:51:43 by jcameira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ ScavTrap::~ScavTrap( void ) {
 }
 
 ScavTrap    &ScavTrap::operator=( const ScavTrap &obj ) {
-    std::cout << "ScavTrap Assignation operator called" << std::endl;
+    std::cout << "ScavTrap Assignment operator called" << std::endl;
     if ( this != &obj ) {
         ClapTrap::operator=(obj);
         this->_gateKeeperMode = obj.getMode();

@@ -6,7 +6,7 @@
 /*   By: jcameira <jcameira@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/17 15:14:58 by jcameira          #+#    #+#             */
-/*   Updated: 2024/11/17 19:35:31 by jcameira         ###   ########.fr       */
+/*   Updated: 2024/11/18 00:51:43 by jcameira         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ ClapTrap::~ClapTrap( void ) {
 }
 
 ClapTrap    &ClapTrap::operator=( const ClapTrap &obj ) {
-    std::cout << "ClapTrap Assignation operator called" << std::endl;
+    std::cout << "ClapTrap Assignment operator called" << std::endl;
     if ( this != &obj ) {
         this->_name = obj.getName();
         this->_hp = obj.getHp();
